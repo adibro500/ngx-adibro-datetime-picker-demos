@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  startDate: any = new Date();
+  onStartDateChange(date) {
+    this.startDate = date;
+    this.startDate = new Date(this.startDate).toISOString();
+  }
 }

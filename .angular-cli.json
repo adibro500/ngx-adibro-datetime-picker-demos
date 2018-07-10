@@ -19,9 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "../node_modules/ngx-adibro-datetime-picker/src/assets/jquery-ui.css",
+        "../node_modules/ngx-adibro-datetime-picker/src/assets/css/jquery-ui-timepicker-addon.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/ngx-adibro-datetime-picker/src/assets/js/jquery.js",              
+"../node_modules/ngx-adibro-datetime-picker/src/assets/jquery-ui.js",
+"../node_modules/ngx-adibro-datetime-picker/src/assets/js/jquery-ui-timepicker-addon.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

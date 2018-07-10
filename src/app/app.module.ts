@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import { NgxAdibroDatetimePickerModule, NgxAdibroDatetimePickerDirective } from 'ngx-adibro-datetime-picker';
 import { AppComponent } from './app.component';
 
 
@@ -10,9 +9,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxAdibroDatetimePickerModule
   ],
-  providers: [],
+  providers: [NgxAdibroDatetimePickerDirective],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
